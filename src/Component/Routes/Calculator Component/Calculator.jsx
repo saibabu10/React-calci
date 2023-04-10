@@ -27,7 +27,6 @@ export class Calculator extends Component {
 
       <div className='main'>Calculator
         <br/>
-        <form>
          <input type="text" placeholder='0'/>
         <div className="numbers">
            
@@ -47,7 +46,6 @@ export class Calculator extends Component {
          <button onClick={Divide()}>/</button>
          <button onClick={clear()}>C</button> */}
          </div>
-         </form>
       </div>
 
     )

@@ -26,17 +26,18 @@ export class Cartoon extends Component {
     const {character,errorMessage}=this.state
     return (
      <React.Fragment>
-      <div  className='header'><h1>The Rick and Morty API</h1> </div>
+      <div  className='header'><h1>The Rick and Morty API<br/><br/></h1> </div>
+      <br/>
       <div className='body'>
       {character.length
       ?character.map(character => <div className='content'>
-        {character.name}<br/>
+       <h2> {character.name}</h2><br/>
       {character.image}
       <br/>
-      {character.status}<br/>
+      status:{character.status}<br/>
+      species:
       {character.species}</div>):null}
       {errorMessage ? <div>{errorMessage}</div>:null}
-     
       </div>
      </React.Fragment>
     )
