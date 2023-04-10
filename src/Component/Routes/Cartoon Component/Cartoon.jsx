@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import './Cartoon.css';
 export class Cartoon extends Component {
   constructor(props) {
     super(props)
@@ -25,12 +26,18 @@ export class Cartoon extends Component {
     const {character,errorMessage}=this.state
     return (
      <React.Fragment>
+      <div  className='header'><h1>The Rick and Morty API</h1> </div>
+      <div className='body'>
       {character.length
-      ?character.map(character => <div>{character.name}<br/>
+      ?character.map(character => <div className='content'>
+        {character.name}<br/>
       {character.image}
       <br/>
-      {character.status}</div>):null}
+      {character.status}<br/>
+      {character.species}</div>):null}
       {errorMessage ? <div>{errorMessage}</div>:null}
+     
+      </div>
      </React.Fragment>
     )
   }
