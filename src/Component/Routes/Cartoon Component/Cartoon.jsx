@@ -32,7 +32,7 @@ export class Cartoon extends Component {
       {character.length
       ?character.map(character => <div className='content'>
        <h2> {character.name}</h2><br/>
-      {character.image}
+      <img src={character.image}/>
       <br/>
       status:{character.status}<br/>
       species:
