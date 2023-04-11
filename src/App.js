@@ -10,7 +10,7 @@ function App() {
     <div className='App'>
      <Link to="/Portfolio">Portfolio</Link>
      <Link to="/Calculator">Calculator</Link>
-     <Link to="/Cartoon">Cartoon</Link>
+     <Link to="/Cartoon">Axios</Link>
     </div>
     <Routes>
       <Route exact path='/Portfolio' element={<Portfolio/>}></Route>
