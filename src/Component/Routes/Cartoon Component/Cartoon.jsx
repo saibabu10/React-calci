@@ -16,7 +16,7 @@ export class Cartoon extends Component {
     .get('https://rickandmortyapi.com/api/character')
     .then(response =>
       {
-        // console.log(response)
+        console.log(response)
         this.setState({character:response.data.results})
       })
       .catch(error =>
@@ -30,10 +30,10 @@ export class Cartoon extends Component {
       <br/>
       <div className='body'>
       {character.length
-      ?character.map(character => <div className='content'>
-       <h2> {character.name}</h2><br/>
+      ?character.map(character => <div key={character.id}className='content'>
+      
       <img src={character.image}/>
-      <br/>
+      <h2> {character.name}</h2>
       status:{character.status}<br/>
       species:
       {character.species}</div>):null}

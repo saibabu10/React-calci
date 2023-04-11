@@ -1,5 +1,15 @@
 .subject
 {
     background-color: black;
-    color: red;
+    color: rgb(0, 255, 55);
 }
+table{
+    border-collapse: collapse;
+    width:50%;
+    }
+    th,td{
+        border: 2px solid #000000;
+        text-align: left;
+        padding:5px;
+       }
+    

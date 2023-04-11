@@ -1,7 +1,8 @@
 .App {
   justify-content: center;
-  display: grid;
-  grid-template-columns: 10% 10% 10%;
-
+  display: flex;
+  /* grid-template-columns: 10% 10% 10%; */
+  flex-direction: row;
+  gap: 10px;
 }
 

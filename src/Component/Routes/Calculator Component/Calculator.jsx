@@ -76,6 +76,7 @@ return (
       3
     </button>
     <button id="equals" value="=">
+      =
     </button>
       <button id="zero" value="0" className="jumbo">
         0

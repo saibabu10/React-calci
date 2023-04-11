@@ -16,11 +16,12 @@ grid-template-columns: 50% 50%;
 }
 .content
 {
-    display:grid;
+    display:flex;
     border: 2px solid gray;
     border-radius: 10px;
     text-align: right;
     padding: 10px;
     margin: 30px;
-
+    flex-direction: column;
+    gap:10px
 }
