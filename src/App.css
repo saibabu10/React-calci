@@ -3,6 +3,8 @@
   display: flex;
   /* grid-template-columns: 10% 10% 10%; */
   flex-direction: row;
-  gap: 10px;
+  gap: 100px;
+  font-size: 25px;
+  text-decoration: none;
 }
 
